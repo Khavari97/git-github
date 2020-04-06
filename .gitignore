@@ -1,8 +1,4 @@
-.idea
-misc.xml
-modules.xml
-tamrin.iml
-vcs.xml
-workspace.xml
+*.xml
+*.iml
 3.html
 
