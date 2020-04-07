@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9e96ed16-ad64-4b84-a79e-cf3e5b41e226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tem2.html" beforeDir="false" afterPath="$PROJECT_DIR$/tem2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MCA\Desktop\p\git-github" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,6 +71,7 @@
       <workItem from="1586170052667" duration="19000" />
       <workItem from="1586170282649" duration="6000" />
       <workItem from="1586193490619" duration="4049000" />
+      <workItem from="1586258340804" duration="3995000" />
     </task>
     <servers />
   </component>
