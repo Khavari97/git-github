@@ -50,13 +50,21 @@
             padding: 75px 75px;
 
         }
-        .form-control{
-            border-radius: 0 25px 25px 0;
+        .input-group :first-child.form-control, :first-child.input-group-addon, :first-child.input-group-btn > .btn, :first-child.input-group-btn > .btn-group > .btn, :first-child.input-group-btn > .dropdown-toggle, :last-child.input-group-btn > :not(:last-child).btn-group > .btn, :last-child.input-group-btn > :not(:last-child):not(.dropdown-toggle).btn{
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
         }
-         .container-fluid .input-group .input-group-btn{
-            border-top-left-radius:10px ;
-            border-bottem-left-redius:10px
+        .input-group :last-child.form-control, :last-child.input-group-addon, :first-child.input-group-btn > :not(:first-child).btn-group > .btn, :first-child.input-group-btn > :not(:first-child).btn, :last-child.input-group-btn > .btn, :last-child.input-group-btn > .btn-group > .btn, :last-child.input-group-btn > .dropdown-toggle{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
         }
+
+
 
     </style>
 </head>
@@ -124,9 +132,9 @@
             <br>
             <form>
                 <div class="input-group">
-                    <input type="email" class="form-control" size="15px" placeholder="جستجو..." required>
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-primary">جستجو</button>
+                    <input type="email" class="form-control " size="15px" placeholder="جستجو..." required>
+                    <div class="input-group-btn" >
+                        <button type="button" class="btn btn-primary">جستجو </button>
                     </div>
 
                 </div>
