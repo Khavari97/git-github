@@ -19,9 +19,13 @@
             color: #818181;
         }
         .navbar{
-            background-color: #f4511e;
+            background-color: #f8f8f8;
             padding: 30px 15px;
 
+        }
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+            background-color:#f4511e ;
+            color: white;
         }
 
         .navbar-nav li a{
@@ -31,7 +35,8 @@
             z-index: 1000;
         }
         .navbar-default .navbar-nav > li > a{
-            color: white;
+            color: #2d2d30;
+
         }
         .navbar-default .navbar-brand{
             color: white;
@@ -39,6 +44,7 @@
         }
         .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
             color: white;
+            background-color: #f4511e;
         }
         .container-fluid {
             padding: 100px 50px;
@@ -74,8 +80,20 @@
 
         }
 
-
-
+        .container-fluid .form-group-lg{
+            padding: 5px 0;
+        }
+        .input-group .form-control{
+            width: 100%;
+        }
+        :last-child.input-group-btn > .btn, :last-child.input-group-btn{
+            z-index: 2;
+            margin-left: 135px;
+        }
+        #search{
+            padding: 5px 0;
+            margin-right: 30px ;
+        }
 
     </style>
     <script>
@@ -182,10 +200,10 @@
             <h4 style="padding: 15px 30px">شما میتوانید جزوات خودرا باما به اشتراک بگذارید ویا کتب دست دوم خودرا به وسیله این سامانه به فروش رسانید...شما میتوانید جزوات خودرا باما به اشتراک بگذارید ویا کتب دست دوم خودرا به وسیله این سامانه به فروش رسانید...شما میتوانید جزوات خودرا باما به اشتراک بگذارید ویا کتب دست دوم خودرا به وسیله این سامانه به فروش رسانید...شما میتوانید جزوات خودرا باما به اشتراک بگذارید ویا کتب دست دوم خودرا به وسیله این سامانه به فروش رسانید...شما میتوانید جزوات خودرا باما به اشتراک بگذارید ویا کتب دست دوم خودرا به وسیله این سامانه به فروش رسانید...شما میتوانید جزوات خودرا باما به اشتراک بگذارید ویا کتب دست دوم خودرا به وسیله این سامانه به فروش رسانید...</h4>
             <br>
             <form>
-                <div class="input-group">
+                <div class="input-group form-group-lg" id="search">
                     <input type="email" class="form-control " size="15px" placeholder="جستجو... " required>
                     <div class="input-group-btn" >
-                        <button type="button" class="btn  btn-primary">جستجو </button>
+                        <button type="button" class="btn btn-lg  btn-primary">جستجو </button>
                     </div>
 
                 </div>
@@ -248,32 +266,25 @@
 </div>
 <!----------------------------------------------->
 <div id="contacttoo" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-        <div class="col-sm-5">
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-        </div>
-        <div class="col-sm-7 slideanim">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+    <div class="col-sm-6">
+
+            <textarea class="form-control" id="comments1" name="comments" placeholder="Comment" rows="12"></textarea>
+        <form>
+            <div class="input-group form-group-lg" >
+                <input type="email" class="form-control " size="15px" placeholder="جستجو... " required>
+                <div class="input-group-btn" >
+                    <button type="button" class="btn btn-lg  btn-primary">جستجو </button>
                 </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                </div>
+
             </div>
-            <textarea class="form-control" id="comments1" name="comments" placeholder="Comment" rows="5"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Send</button>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
-</div>
+    <div class="col-sm-6">
+        <span><img src="slider/12.jpg" style="width: 500px ; height: auto ; margin-top: 35px"> </span>
+    </div>
+
+        </div>
+
 
 
 </body>
