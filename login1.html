@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background-color:#f8f8f8 ;
+        }
+        .container-fluid{
+            padding: 20px 30px;
+        }
+         .navbar-header .navbar-brand {
+            font-size: 21px;
+            color: #f4511e;
+        }
+        .container p{
+            font-size: 30px;
+            color:#f4511e ;
+            text-align: center;
+        }
+        .form-group-lg .form-control{
+            border-radius: 80px;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        .btn{
+            border-radius: 40px;
+            margin-right: 40%;
+            color: white;
+            background-color:#f4511e ;
+            padding: 10px 30px;
+        }
+        @media screen and (max-width: 728px){
+            .navbar-brand {
+               margin-right: 5px;
+            }
+            .btn{
+                margin-bottom: 30px;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-right">
+            <p class="navbar-brand" href="#myPage"><span><img src="Slider/10.png" style="width: 60px ; height: 30px"></span>دانشگاه خوارزمی</p>
+        </div>
+    </div>
+    <br>
+</header>
+<!------------------------------------>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <p>ثبت نام</p>
+            <form action="">
+                <div class="form-group form-group-lg">
+                    <input type="text" class="form-control" placeholder="نام" id="name">
+                </div>
+                <div class="form-group form-group-lg">
+                    <input type="email" class="form-control" placeholder="ایمیل" id="email">
+                </div>
+                <div class="form-group form-group-lg">
+                    <input type="password" class="form-control" placeholder="رمزعبور" id="password">
+                </div>
+                <div class="form-group form-group-lg">
+                    <input type="password" class="form-control" placeholder="تکرارمزعبور" id="repeat password">
+                </div>
+                <button class="btn btn-lg" type="submit">ثبت نام</button>
+            </form>
+
+        </div>
+        <div class="col-sm-6">
+            <p>ورود</p>
+            <form action="">
+                <div class="form-group form-group-lg">
+                    <input type="email" class="form-control" placeholder="ایمیل" id="email1">
+                </div>
+                <div class="form-group form-group-lg">
+                    <input type="password" class="form-control" placeholder="رمزعبور" id="password1">
+                </div>
+                <button class="btn btn-lg" type="submit">ورود</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -41,11 +41,16 @@
         }
         @media screen and (max-width: 728px){
             .navbar .container-fluid .navbar-brand{
-                padding:10px 15px;
+                padding:12px 15px;
                 color: #f4511e;
                 font-size: 20px;
                 margin-right: 10px;
+
             }
+            .navbar .container-fluid .navbar-brand >span>img {
+                display: none;
+            }
+
             .nav > li > a{
                 position: relative;
                 display: block;
@@ -54,7 +59,17 @@
             }
 
         }
-
+        .navbar-default .navbar-toggle{
+            border-radius: 5px;
+            background-color: white;
+            border-color: #f4511e;
+        }
+        .navbar-default .navbar-toggle .icon-bar{
+            background-color: #f4511e;
+        }
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+            background-color: #d58512;
+        }
 
     </style>
 
