@@ -2,74 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login1</title>
+    <title>Login-Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css"  type="text/css" rel="stylesheet">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <style>
-        body,html{
-            width: 100%;
-            height: 100%;
-        }
-        body{
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-            background-color:#f8f8f8 ;
-        }
+
         .container-fluid{
             padding: 20px 30px;
         }
+
          .navbar-header .navbar-brand {
             font-size: 21px;
-            color: #f4511e;
+            color:#FF9200 ;
         }
+
+        .navbar-header .navbar-brand span{
+           margin-left: 30px;
+        }
+
         .container p{
-            font-size: 30px;
-            color:#f4511e ;
+            font-size: 45px;
+            color:#FF9200  ;
             text-align: center;
         }
+
         .form-group-lg .form-control{
             border-radius: 80px;
-            padding: 10px 15px;
+            padding: 30px 30px;
+            font-family: sahel;
             font-size: 16px;
+            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+            -woz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
         }
-        .btn{
-            border-radius: 40px;
-            margin-right: 40%;
-            color: white;
-            background-color:#f4511e ;
-            padding: 10px 30px;
-        }
+
         @media screen and (max-width: 728px){
-            .navbar-brand {
-               margin-right: 5px;
+            .navbar-brand img {
+          
             }
+
             .btn{
                 margin-bottom: 30px;
             }
 
-
         }
 
     </style>
+
 </head>
+
 <body>
+<!--------Header----------------------------->
+
 <header>
     <div class="container-fluid">
         <div class="navbar-header navbar-right">
-            <p class="navbar-brand" href="#myPage"><span><img src="Slider/10.png" style="width: 60px ; height: 30px"></span>دانشگاه خوارزمی</p>
+            <div class="Tem">
+            <p class="navbar-brand "><span><img src="Slider/Logo.png" style="width: 60px ; height: auto"></span>دانشگاه خوارزمی</p>
+            </div>
         </div>
     </div>
-    <br>
 </header>
-<!------------------------------------>
+<br><br>
+<!-------Content----------------------------->
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
             <p>ثبت نام</p>
+
             <form action="">
+
                 <div class="form-group form-group-lg">
                     <input type="text" class="form-control" placeholder="نام" id="name">
                 </div>
@@ -87,13 +94,15 @@
 
         </div>
         <div class="col-sm-6">
+
             <p>ورود</p>
+
             <form action="">
                 <div class="form-group form-group-lg">
-                    <input type="email" class="form-control" placeholder="ایمیل" id="email1">
+                    <input type="email" class="form-control" placeholder="ایمیل" id="_email">
                 </div>
                 <div class="form-group form-group-lg">
-                    <input type="password" class="form-control" placeholder="رمزعبور" id="password1">
+                    <input type="password" class="form-control" placeholder="رمزعبور" id="_password">
                 </div>
                 <button class="btn btn-lg" type="submit">ورود</button>
 
