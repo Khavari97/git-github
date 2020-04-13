@@ -31,10 +31,20 @@
             text-align: center;
         }
 
+        .form-group-lg .form-control {
+            border-radius: 6vw;
+            padding: 2vw 2vw;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -woz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        }
+
         .btn {
             margin: 0 auto;
             display: table;
         }
+
         .btn:hover{
             color:#FFFFFF;
             background: linear-gradient(to right, #FF9200,#FC4A1A);
@@ -65,8 +75,7 @@
 <header>
     <div class="container-fluid">
         <div class="navbar-header navbar-right">
-            <p class="navbar-brand "><span><img src="Slider/Logo.png" style="width: 60px ; height: auto"></span>دانشگاه
-                    خوارزمی</p>
+                <p class="navbar-brand "><span><img src="Slider/Logo.png" style="width: 60px ; height: auto"></span>دانشگاه خوارزمی</p>
         </div>
     </div>
 </header>
@@ -83,44 +92,32 @@
                 <div class="form-group form-group-lg">
                     <input type="text" class="form-control" placeholder="نام" id="name">
                 </div>
-
                 <div class="form-group form-group-lg">
                     <input type="email" class="form-control" placeholder="ایمیل" id="email">
                 </div>
-
                 <div class="form-group form-group-lg">
                     <input type="password" class="form-control" placeholder="رمزعبور" id="password">
                 </div>
-
                 <div class="form-group form-group-lg">
                     <input type="password" class="form-control" placeholder="تکرارمزعبور" id="repeat password">
                 </div>
-
                 <button class="btn btn-lg" type="submit">ثبت نام</button>
-
             </form>
 
         </div>
-        <!----------vorood----------------------------------------- ------>
+
+        <!----------bazyabi----------------------------------------- ------>
+
         <div class="col-sm-6">
 
-            <p>ورود</p>
+            <p>بازیابی رمز عبور</p>
 
             <form action="">
-
                 <div class="form-group form-group-lg">
                     <input type="email" class="form-control" placeholder="ایمیل" id="_email">
                 </div>
 
-                <div class="form-group form-group-lg">
-                    <input type="password" class="form-control" placeholder="رمزعبور" id="_password">
-                </div>
-
-                <div><a href="login2.html"
-                        style="color: blue ; font-family: sahel  ; padding:10px 15px ;font-size: 1vw"><u>رمز
-                    عبورخودرافراموش کرده ام</u></a></div>
-
-                <button class="btn btn-lg" type="submit">ورود</button>
+                <button class="btn btn-lg" type="submit">بازیابی</button>
 
             </form>
 
