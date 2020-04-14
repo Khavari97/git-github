@@ -21,7 +21,7 @@ body {
     background: linear-gradient(to right, #FC4A1A, #FF9200);
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
-    -woz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     padding: 1.5vw 3vw;
 
@@ -33,7 +33,7 @@ body {
     padding: 2vw 2vw;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
-    -woz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 

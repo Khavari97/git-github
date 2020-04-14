@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/Front-end.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-end.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login1.html" beforeDir="false" afterPath="$PROJECT_DIR$/login1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login2.html" beforeDir="false" afterPath="$PROJECT_DIR$/login2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +110,9 @@
       <workItem from="1586714150392" duration="5806000" />
       <workItem from="1586762542689" duration="5524000" />
       <workItem from="1586776219609" duration="4413000" />
+      <workItem from="1586784843673" duration="1764000" />
+      <workItem from="1586792019643" duration="1001000" />
+      <workItem from="1586807067656" duration="3837000" />
     </task>
     <servers />
   </component>
