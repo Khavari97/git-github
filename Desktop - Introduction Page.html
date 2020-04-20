@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+
+        .navbar-default {
+            background-color: #E3E3E3;
+            border-color: #E3E3E3;;
+        }
+
+        .container-fluid .navbar-collapse {
+            margin-left: 5vw;
+            margin-right: 0;
+
+        }
+
+
+        .navbar .container-fluid .navbar-brand {
+            margin-right: 2vw;
+            padding: 2.2vw 1vw;
+            color: #FF9200;
+            font-size: 1.5vw;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            position: relative;
+            display: block;
+            color: #707070;
+            padding: 2.2vw 1.4vw;
+            font-family: sahel;
+            font-size: 1vw;
+
+        }
+
+        .navbar-nav > li {
+            float: right;
+        }
+
+        .navbar {
+            border: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            border: 0px;
+            border-radius: 8vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FC4A1A, #FF9200);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            padding: 1.4vw 2.5vw;
+            font-family: lalezar;
+            font-size: 1.4vw;
+            right: 22.5vw;
+        }
+
+        .btn:hover, .btn:focus {
+            border: 0;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FF9200, #FC4A1A);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        @media screen and (max-width: 728px) {
+            .navbar .container-fluid .navbar-brand {
+                padding: 12px 15px;
+                color: #FF9200;
+                font-size: 20px;
+                margin-right: 10px;
+
+            }
+
+            .navbar .container-fluid .navbar-brand > span > img {
+                display: none;
+            }
+
+            .navbar-default .navbar-nav > li > a {
+                position: relative;
+                display: block;
+                color: #FFFFFF;
+                padding: 15px 10px;
+                font-size: 15px;
+            }
+
+        }
+
+        .navbar-default .navbar-toggle {
+            border-radius: 5px;
+            background-color: white;
+            border-color: #f4511e;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #f4511e;
+        }
+
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+            background-color: #d58512;
+        }
+
+        /****************************************************************************************************************/
+        .panel {
+            border: 0;
+            border-radius: 16px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .panel .panel-heading {
+            background-color: #FF9200;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px
+        }
+
+        .panel .panel-footer {
+            border: 0;
+            background-color: #FFFFFF;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            font-family: sahel;
+            font-size: 1.1vw;
+            padding: 0.8vw 1vw;
+        }
+
+        .panel .panel-body {
+            font-family: sahel;
+            font-size: 1.1vw;
+            padding: 1vw 1vw;
+        }
+
+        .size {
+            width: 12%;
+            height: auto;
+        }
+
+        .type1 {
+            color: #FF9200;
+            font-size: 3.5vw;
+            padding: 0.7vw 2.4vw;
+        }
+
+        .type2 {
+            color: #707070;
+            font-size: 1.1vw;
+            font-family: sahel;
+            padding: 0.7vw 2.4vw;
+        }
+
+        .search input[type=text] {
+            padding: 1.3vw 1vw;
+            font-size: 1.1vw;
+            float: right;
+            width: 50%;
+            height: auto;
+            margin-right: 5.5vw;
+            border: 0;
+            border-top-right-radius: 4.5vw;
+            border-bottom-right-radius: 4.5vw;
+            font-family: sahel;
+            background-color: #FFFFFF;
+            color: #707070;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .search input[type=text]:focus {
+            border-color: #66afe9;
+        }
+
+        .search button {
+            float: right;
+            width: 20%;
+            padding: 1.3vw 0vw;
+            font-size: 1.1vw;
+            font-family: sahel;
+            border: 0;
+            border-top-left-radius: 4.5vw;
+            border-bottom-left-radius: 4.5vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FC4A1A, #FF9200);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .search button:hover, .search button:focus {
+            border: 0;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FF9200, #FC4A1A);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .search::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .comments .form-control {
+            width: 70%;
+            margin-right: 4vw;
+            border-radius: 1vw;
+            color: #707070;
+            font-family: sahel;
+            font-size: 1.1vw;
+        }
+
+        .email input[type=email] {
+            padding: 1vw 1.2vw;
+            font-size: 1.1vw;
+            float: right;
+            width: 47%;
+            height: auto;
+            margin-right: 4.8vw;
+            margin-top: 0;
+            border: 0;
+            border-top-right-radius: 4.5vw;
+            border-bottom-right-radius: 4.5vw;
+            border-top-left-radius: 0;
+            border-bottom-left-radius:0;
+            font-family: sahel;
+            background-color: #FFFFFF;
+            color: #707070;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .email input[type=email]:focus {
+            border-color: #66afe9;
+        }
+
+        .email button {
+            float: right;
+            width: 20%;
+            padding: 1vw 0vw;
+            font-size: 1.1vw;
+            font-family: sahel;
+            border: 0;
+            border-top-left-radius: 4.5vw;
+            border-bottom-left-radius: 4.5vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FC4A1A, #FF9200);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .email button:hover, .search button:focus {
+            border: 0;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FF9200, #FC4A1A);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .navbar-nav li a:focus, .navbar-nav li.active a {
+            border: 0px;
+            border-radius: 2vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FC4A1A, #FF9200);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            padding: 1.2vw 1.5vw;
+            margin-top: 1vw;
+
+
+        }
+
+        .navbar-default .navbar-nav > li > a:focus {
+            border: 0px;
+            border-radius: 2vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FC4A1A, #FF9200);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            padding: 1.2vw 1.5vw;
+            margin-top: 1vw;
+        }
+
+        .navbar-default .navbar-nav > .active > a {
+            border: 0px;
+            border-radius: 2vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FC4A1A, #FF9200);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            padding: 1.2vw 1.5vw;
+            margin-top: 1vw;
+        }
+
+        .navbar-default .navbar-nav > .active > a:hover {
+            border: 0px;
+            border-radius: 2vw;
+            color: #FFFFFF;
+            background: linear-gradient(to right, #FF9200, #FC4A1A);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            padding: 1.2vw 1.5vw;
+            margin-top: 1vw;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<!-----------------------------Body------------------------------->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-right">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage"><span style="margin-left: 30px"><img src="Slider/Logo.png"
+                                                                                            style="width:20% ; height:auto"></span>دانشگاه
+                    خوارزمی</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="active" href="#Home">خانه</a></li>
+                    <li><a href="#Know_more">بیشتربدانید</a></li>
+                    <li><a href="#Search">جستجو</a></li>
+                    <li><a href="#A_bout_us">درباره ما</a></li>
+                    <li><a href="#Contact_us">ارتباط با ما</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- ---------Home--------------->
+
+<div class="container-fluid" id="Home">
+    <div class="row">
+        <div class="col-sm-12">
+            <div>
+                <img src="Slider/Bg-01-01.png" class="img-responsive"
+                     style="width:70% ; height: auto ; position:relative ;right:30vw ; top:7vw">
+                <img src="Slider/Vct-01-01.png" class="img-responsive"
+                     style="width: 40% ; height: auto ;position:absolute; top:14vw; left:6.2vw">
+
+            </div>
+            <h2 style="top:12vw ; padding: 1.2vw 2.4vw ; color: #FF9200 ; font-size: 3.7vw ;position: absolute"> با ما
+                به
+                اشتراک
+                بگذارید...</h2>
+            <div style="position:absolute ; padding: 1.2vw 2.4vw ; top: 21vw  ; font-family: sahel ; color: #707070; font-size: 1.1vw">
+                شما میتوانید جزوات و کتب دست دوم خودرا به وسیله این سامانه دراختیار<br> دیگران قرار دهید ویاآنها را به
+                فروش برسانید...
+            </div>
+            <br>
+            <a href="login1.html">
+                <button class="btn" type="button" style="position: absolute; top: 27vw">ورود/ثبت نام</button>
+            </a>
+            <div>
+
+                <div class="size" style="position: absolute ; display: inline; left:16vw ; top: 52vw">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Slider/IconBook.png" class="img-responsive"
+                                 style="padding: 2.6vw 2.2vw ;width: 100% ;height: auto">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعدادكتب</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>348</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="size" style="position: absolute ; display: inline ; left:34vw ; top:52vw">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Slider/IconAvatar.png" class="img-responsive"
+                                 style="padding:1.7vw 2vw ; width: 100% ; height: auto">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعداداعضاء</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>450</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="size" style="position: absolute ; display: inline ;left:51vw; top:52vw">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Slider/IconNote.png" class="img-responsive"
+                                 style="padding:1.4vw 2.1vw ; width: 100% ; height: auto">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعدادجزوات</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>1263</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="size" style="position: absolute ; display: inline ; left:68vw ; top:52vw">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Slider/IconResource.png" class="img-responsive"
+                                 style="padding: 1vw 2.1vw ; width: 100% ; height: auto">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعدادمنابع</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>156</b></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!----------------Know_more------------------>
+<div class="container-fluid" id="Know_more">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-5 slideanim">
+            <img src="Slider/Bg-01-02@2x.png" style="position:relative ; right:1vw">
+            <img src="Slider/Vct-01-02.png"
+                 style="position: absolute ; left: 2vw ; width: 40% ; height: auto ;top: 2vw">
+            <p style="position: absolute ; right: 12vw ; font-size: 3vw ; top: 3vw ; color: #FFFFFF">جزوات</p>
+            <p style="position: absolute ; right: 7vw ; font-size: 3vw ; top: 3vw ; padding: 5vw 1vw; color: #FFFFFF">
+                کتب دست دوم</p>
+            <p style="position: absolute ; right: 12vw ; font-size: 3vw ; top: 3vw ; padding: 10vw 1vw; color: #FFFFFF">
+                منابع</p>
+
+        </div>
+        <div class="col-sm-7">
+            <h1 class="type1">بیشتربدانید</h1>
+            <p class="type2">لورم اپیسوم متن ساختگی باتولیدساختگس نامفهوم از صنعت چاپ ، وبااستفاده از صنعت گرافیک است ،
+                چاپگرهاومتون بلکه روزنامه ومجله درستون وسطرآنچنان که لازم است ، وبرای شرایط فعلی تکنولوژی
+                موردنیازوکاربردهای متعددباهدف بهبودابزارهای کاربردی می باشد، کتابهای زیادی درشصت وسه درصدگذشته حال
+                وآینده شناخت فراوان جامعه ومتخصصان رامیطلبد، تابانرم افزارها شناخت بیشتری رابرای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی وفرهنگ پیشرو</p>
+
+        </div>
+    </div>
+</div>
+<!-----------Search------------------>
+<div class="container-fluid" id="Search">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-7">
+            <p class="type2" style="margin-top: 3vw">لورم اپیسوم متن ساختگی باتولیدساختگس نامفهوم از صنعت چاپ ،
+                وبااستفاده از صنعت گرافیک است ، چاپگرهاومتون بلکه روزنامه ومجله درستون وسطرآنچنان که لازم است ، وبرای
+                شرایط فعلی تکنولوژی موردنیازوکاربردهای متعددباهدف بهبودابزارهای کاربردی می باشد، کتابهای زیادی درشصت وسه
+                درصدگذشته حال وآینده شناخت فراوان جامعه ومتخصصان رامیطلبد، تابانرم افزارها شناخت بیشتری رابرای طراحان
+                رایانه ای علی الخصوص طراحان خلاقی وفرهنگ پیشرو</p>
+            <br>
+            <form action="" class="search slideanim">
+                <input type="text" placeholder="جستجو" name="search">
+                <button type="submit">
+                    کتب دست دوم<p class="glyphicon glyphicon-chevron-down"
+                                  style="display: inline ;top: 0.4vw ; right: 0.4vw"></p>
+                </button>
+
+            </form>
+
+        </div>
+        <div class="col-sm-5 slideanim">
+            <img src="Slider/Bg-01-03.png" style="position: relative ; left: 1vw">
+            <img src="Slider/Vct-01-03.png"
+                 style="position: absolute ; right: 2vw ; width: 45% ; height: auto ;top: 0vw">
+            <p style="position: absolute ; left: 10vw ; font-size: 3vw ; top: 9vw ; color: #FFFFFF">جستجو</p>
+
+        </div>
+    </div>
+</div>
+<!-----------A bout us----------------->
+<div class="container-fluid" id="A_bout_us">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-5 slideanim">
+            <img src="Slider/Bg-01-02.png" style="position: relative ; right: 1vw">
+            <img src="Slider/Vct-01-04.png"
+                 style="position: absolute ; left: 2vw ; width: 50% ; height: auto ;top: 2.2vw">
+            <p style="position: absolute ; left: 25vw ; font-size: 3vw ; top: 9vw ; color: #FFFFFF">درباره ما</p>
+
+        </div>
+        <div class="col-sm-7">
+            <p class="type2" style="margin-top: 4vw">لورم اپیسوم متن ساختگی باتولیدساختگس نامفهوم از صنعت چاپ ،
+                وبااستفاده از صنعت گرافیک است ، چاپگرهاومتون بلکه روزنامه ومجله درستون وسطرآنچنان که لازم است ، وبرای
+                شرایط فعلی تکنولوژی موردنیازوکاربردهای متعددباهدف بهبودابزارهای کاربردی می باشد، کتابهای زیادی درشصت وسه
+                درصدگذشته حال وآینده شناخت فراوان جامعه ومتخصصان رامیطلبد، تابانرم افزارها شناخت بیشتری رابرای طراحان
+                رایانه ای علی الخصوص طراحان خلاقی وفرهنگ پیشرو</p>
+
+
+        </div>
+    </div>
+</div>
+<!-----------------Contact us----------------------------------->
+<div class="container-fluid" id="Contact_us">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-7">
+            <div class="type2">لورم اپیسوم متن ساختگی باتولیدساختگس نامفهوم از صنعت چاپ ، وبااستفاده از صنعت گرافیک است
+                ، چاپگرهاومتون بلکه روزنامه ومجله درستون وسطرآنچنان که لازم است ، وبرای شرایط فعلی تکنولوژی
+            </div>
+            <form class="comments">
+                <div class="form-group">
+                    <label for="comment"></label>
+                    <textarea class="form-control " placeholder="comment" id="comment" name="comment" rows="6">
+
+                </textarea>
+                </div>
+            </form>
+            <form action="" class="email form-group">
+                <input class="form-control" type="email" placeholder="ایمیل" name="email">
+                <button type="submit">ارسال
+                </button>
+
+            </form>
+
+
+        </div>
+        <div class="col-sm-5 slideanim">
+            <img src="Slider/Bg-01-03.png" style="position: relative ; left: 0vw">
+            <img src="Slider/Vct-01-05.png"
+                 style="position: absolute ; right: 2vw ; width: 52% ; height: auto ;top: 2.2vw">
+            <p style="position: absolute ; left: 8vw ; font-size: 3vw ; top: 9vw ; color: #FFFFFF">ارتباط با ما</p>
+
+        </div>
+    </div>
+</div>
+<!--------------------Footer-------------------------------------------------------------------------------------------------->
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12" style="margin-top: 20vw">
+
+            <img src="Slider/Bg-01-04@2x.png" style="width: 100% ; height: auto ;right: 0 ; left: 0">
+            <p style="position: absolute ;right: 13vw ; top: 15vw ; color: #FFFFFF ;font-size: 3vw">ما را در شبکه های
+                اجتماعی دنبال کنید</p>
+            <img src="Slider/LogoTelegram.png"
+                 style="position: absolute ; top: 14vw ;left: 19vw ; width:6% ; height: auto">
+            <img src="Slider/LogoFacebook.png"
+                 style="position: absolute ; top: 14vw ;left: 26vw; width:6% ; height: auto">
+            <img src="Slider/LogoLinkedin.png"
+                 style="position: absolute ; top: 14vw ;left: 33vw; width:6% ; height: auto">
+            <img src="Slider/LogoTwitter.png"
+                 style="position: absolute ; top: 14vw;left: 40vw; width:6% ; height: auto">
+            <p style="position: absolute ; right:32% ;font-family: sahel ; font-size: 1.1vw ; top: 23vw;color: #FFFFFF">
+                هرگونه کپی برداری از محتوا و برنامه های سایت مجاز نمی باشد
+            </p>
+
+
+        </div>
+    </div>
+</footer>
+
+<!---------------------------------script------------------->
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+
+</body>
+</html>
