@@ -7,3 +7,13 @@ div{
     background-color: yellow;
     color: darkcyan;
 }
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.type1{
+    font-family: sahel;
+    font-size: 4vw;
+        
+}
